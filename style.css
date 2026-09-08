@@ -16,7 +16,49 @@ body{
     flex-direction: column;
 }
 
-header, nav, main, footer{
+header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #FFFF;
+    padding: 20px;
+    border-radius: 30px;
+    line-height: 100%;
+}
+
+nav>img{
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: space-evenly;
+   border:#b4cea3 outset 2px;
+   border-radius: 50%;
+
+}
+
+header>p{
+   font-size: 40px;
+   margin-top: 40px;
+}
+
+ul, nav{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style: none;
+    margin-top: 40px;
+    font-size: 23px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main, footer{
     width: 100%;
     background-color: #FFFF;
     padding: 20px;
@@ -37,14 +79,14 @@ main>p {
 }
 
 aside, article{
-    background-color: #d9d9d9;
+    background-color: #e4e4e4;
     padding: 20px;
     border-radius: 30px;
 }
 
 aside{
     width: 30%;
-    height: 49%;
+    height: 33%;
 }
 
 article{
@@ -52,16 +94,79 @@ article{
 }
 
 section{
-    background-color: #b4b4b4;
+    background-color: #b4cea3;
     width: 100%;
     padding: 20px;
     border-radius: 30px;
 }
 
-address{
-    background-color: #d9d9d9;
+figure>source, img{
+    border-radius: 30px;
+    padding: 10px 0 0 0;
+}
+figcaption{
+    border-radius: 30px;
+}
+
+.contato{
     padding: 20px;
     border-radius: 30px;
+    padding: 60px 8% 120px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4e4e4;
+}
+fieldset{
+    width: 500px;
+    gap: 8px;
+    margin-bottom: 50px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    border: none;
+    margin-top: 30px;
+}
+fieldset, label, textarea{
+    font-weight: 500;
+    color: black;
+}
+.contato input, textarea{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e2e8f0; 
+    border-radius: 4px;
+    font-family: sans-serif;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0);
+}
+.btn-enviar{
+     background-color: #b4cea3;
+    border: 2px solid #b4cea3;
+    color: black;
+}
+.btn-enviar:hover{
+    background-color: #718068;
+    border-color: #718068;
+}
+
+.icons{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.texto{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 30px;
+    font-family: "Nunito", sans-serif;
 }
 
 figcaption{
